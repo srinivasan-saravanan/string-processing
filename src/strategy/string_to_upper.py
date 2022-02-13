@@ -1,4 +1,5 @@
-from string_processing import StringProcessing
+from src.string_processing import StringProcessing
+
 
 class StringToUpper(StringProcessing):
 
@@ -8,6 +9,7 @@ class StringToUpper(StringProcessing):
     def process_string(self):
         s = self.word.upper()
         self.render_output(s)
+        return s
 
     def render_output(self, output):
         print(output)
