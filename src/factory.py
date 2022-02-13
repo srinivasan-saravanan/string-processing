@@ -3,6 +3,7 @@ from strategy.create_csv import CreateCSV
 from strategy.string_to_alternate_upper import StringToAlternateUpper
 from strategy.string_to_upper import StringToUpper
 
+
 class FactoryClass(object):
 
     def __init__(self):
