@@ -1,5 +1,7 @@
 import csv
-from string_processing import StringProcessing
+
+from src.string_processing import StringProcessing
+
 
 class CreateCSV(StringProcessing):
 
@@ -15,4 +17,3 @@ class CreateCSV(StringProcessing):
 
     def render_output(self, output=None):
         print("CSV created!")
-
