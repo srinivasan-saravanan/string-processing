@@ -1,5 +1,6 @@
 from enum import Enum
 
+
 class StringProcessingMethods(Enum):
     to_upper = 'to_upper'
     to_alternate_upper = 'to_alternate_upper'
