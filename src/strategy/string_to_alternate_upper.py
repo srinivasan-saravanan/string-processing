@@ -1,4 +1,5 @@
-from string_processing import StringProcessing
+from src.string_processing import StringProcessing
+
 
 class StringToAlternateUpper(StringProcessing):
 
@@ -7,7 +8,9 @@ class StringToAlternateUpper(StringProcessing):
 
     def process_string(self):
         s = [ch.lower() if i % 2 == 0 else ch.upper() for i, ch in enumerate(self.word)]
-        self.render_output("".join(s))
+        formatted_text = "".join(s)
+        self.render_output(formatted_text)
+        return formatted_text
 
     def render_output(self, output):
         print(output)
